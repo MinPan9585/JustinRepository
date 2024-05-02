@@ -7,16 +7,19 @@ public class Player : MonoBehaviour
     public Rigidbody2D rb;
     float horizontalSpeed;
     public float verticalSpeed;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    float speedMultiplier = 2f;
 
-    // Update is called once per frame
     void Update()
     {
         horizontalSpeed = Input.GetAxis("Horizontal");
-        rb.MovePosition(rb.position + new Vector2(horizontalSpeed, verticalSpeed) * Time.fixedDeltaTime);
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Instantiate(Resources.Load("Bullet"), transform.position, Quaternion.identity);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        rb.MovePosition(rb.position + new Vector2(horizontalSpeed * speedMultiplier, verticalSpeed) * Time.fixedDeltaTime * speedMultiplier);
     }
 }
