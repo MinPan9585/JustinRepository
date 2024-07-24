@@ -22,4 +22,14 @@ public class Player : MonoBehaviour
     {
         rb.MovePosition(rb.position + new Vector2(horizontalSpeed * speedMultiplier, verticalSpeed) * Time.fixedDeltaTime * speedMultiplier);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            //game over
+            Destroy(gameObject);
+            //Time.timeScale = 0;
+        }
+    }
 }
