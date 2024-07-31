@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8286096599197956106}
   m_Layer: 0
   m_Name: Bird_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -248,7 +248,7 @@ GameObject:
   - component: {fileID: 8873064274362976433}
   - component: {fileID: 7053531310290560595}
   - component: {fileID: 7030829831747961400}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: triggerbox (3)
   m_TagString: TriggerBox
   m_Icon: {fileID: 0}

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 4380483211483395509}
   - component: {fileID: 3591952609837308993}
   - component: {fileID: 4331562731498385703}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,6 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 3591952609837308993}
+  smokepuff: {fileID: 463035987246289760, guid: c9a79013a39070f4487b07cec15cccfd, type: 3}
 --- !u!1 &7335479067393627373
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8468715390065911109}
   - component: {fileID: 3735223649658420341}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Acorn_Seed2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

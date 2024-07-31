@@ -1106,7 +1106,7 @@ GameObject:
   - component: {fileID: 4338530533700217732}
   - component: {fileID: 1604460203278562577}
   - component: {fileID: 5258763190597110994}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: triggerbox (2)
   m_TagString: TriggerBox
   m_Icon: {fileID: 0}
@@ -1219,7 +1219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1767100579899534117, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Fly
       objectReference: {fileID: 0}
     - target: {fileID: 6029412162122224353, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_RootOrder
@@ -1285,7 +1285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1767100579899534117, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Fly
       objectReference: {fileID: 0}
     - target: {fileID: 6029412162122224353, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_RootOrder
@@ -1351,7 +1351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1767100579899534117, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Fly
       objectReference: {fileID: 0}
     - target: {fileID: 6029412162122224353, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_RootOrder
@@ -1417,7 +1417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1767100579899534117, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Fly
       objectReference: {fileID: 0}
     - target: {fileID: 6029412162122224353, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_RootOrder
@@ -1483,7 +1483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1767100579899534117, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Fly
       objectReference: {fileID: 0}
     - target: {fileID: 6029412162122224353, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_RootOrder
@@ -1549,7 +1549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1767100579899534117, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Fly
       objectReference: {fileID: 0}
     - target: {fileID: 6029412162122224353, guid: 0c9a6dbea4322ad4db4f1d87d1b92f1f, type: 3}
       propertyPath: m_RootOrder
