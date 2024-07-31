@@ -8,7 +8,10 @@ public class Player : MonoBehaviour
     float horizontalSpeed;
     public float verticalSpeed;
     float speedMultiplier = 2f;
-
+    private void Start()
+    {
+        PlayerPrefs.SetInt("score", 0);
+    }
     void Update()
     {
         horizontalSpeed = Input.GetAxis("Horizontal");
