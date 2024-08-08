@@ -10,7 +10,7 @@ public class SpawnNewTile : MonoBehaviour
     {
         if(collision.gameObject.tag == "TriggerBox")
         {
-            GameObject tile = Instantiate(tilePrefabs[Random.Range(0,2)], new Vector3(0,-19.9f,0), Quaternion.identity);
+            GameObject tile = Instantiate(tilePrefabs[Random.Range(0,3)], new Vector3(0,-19.9f,0), Quaternion.identity);
             tile.transform.SetParent(bgTrans);
         }
     }

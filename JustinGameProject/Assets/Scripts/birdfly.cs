@@ -22,25 +22,21 @@ public class birdfly : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        birdbody.MovePosition(birdbody.position + new Vector2(force, 0) * Time.fixedDeltaTime);
+        //birdbody.MovePosition(birdbody.position + new Vector2(force, 0) * Time.fixedDeltaTime);
+        //birdbody.MovePosition(birdbody.position + new Vector2(force, 0) * Time.fixedDeltaTime);
+        //birdbody.position += new Vector2(50, 0) * Time.fixedDeltaTime;
+        birdbody.transform.Translate(force * Time.fixedDeltaTime, 0, 0);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
             Debug.Log("birdnow");
-            force = 5f;
+            force = 50f;
             //warning.SetActive(true);
             //new WaitForSeconds(3f);
             //warning.SetActive(false);
             //birdf(5);
         }
     }
-    /*
-    private void birdf(int force)
-    {
-        Vector2 move = new Vector2(0, force);
-        birdbody.AddForce(move);
-    }
-    */
 }
