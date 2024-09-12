@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     float horizontalSpeed;
     public float verticalSpeed;
     float speedMultiplier = 2f;
+    public GameObject corn;
     private void Start()
     {
         PlayerPrefs.SetInt("score", 0);
@@ -17,13 +18,14 @@ public class Player : MonoBehaviour
         horizontalSpeed = Input.GetAxis("Horizontal");
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(Resources.Load("Bullet"), transform.position, Quaternion.identity);
+            Instantiate(Resources.Load("Bullet"), transform.position, Quaternion.Euler(0, 0, horizontalSpeed * 20));
         }
     }
 
     private void FixedUpdate()
     {
         rb.MovePosition(rb.position + new Vector2(horizontalSpeed * speedMultiplier, verticalSpeed) * Time.fixedDeltaTime * speedMultiplier);
+        corn.transform.rotation = Quaternion.Euler(0, 0, horizontalSpeed*20);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
