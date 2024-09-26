@@ -24,7 +24,8 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + new Vector2(horizontalSpeed * speedMultiplier, verticalSpeed) * Time.fixedDeltaTime * speedMultiplier);
+        rb.MovePosition(rb.position + 
+            new Vector2(horizontalSpeed * speedMultiplier, verticalSpeed) * Time.fixedDeltaTime * speedMultiplier);
         corn.transform.rotation = Quaternion.Euler(0, 0, horizontalSpeed*20);
     }
 
